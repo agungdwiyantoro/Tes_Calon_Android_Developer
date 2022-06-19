@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Tes_Calon_Android_Developer</string>
+    <string name="txt_login">Login</string>
+    <string name="txt_email">Email</string>
+    <string name="txt_password">Password</string>
+    <string name="txt_forgot_password">Forgot Password?</string>
+    <string name="txt_best_seller">Best Seller</string>
+    <string name="txt_sold">Sold :</string>
+    <string name="txt_free_delivery">Free Delivery</string>
+
+    <string name="txt_username">Username</string>
+    <string name="txt_name">Name</string>
+    <string name="txt_phone_number">Phone Number</string>
+    <string name="txt_address">Address :</string>
+    <string name="txt_city">City</string>
+    <string name="txt_street">Street</string>
+    <string name="txt_number">Number</string>
+    <string name="txt_zipcode">Zipcode</string>
+    <string name="txt_logout">Logout</string>
+
+    <string name="txt_category">Category :</string>
+
+    <string name="txt_enter_your_username">Enter your username</string>
+    <string name="txt_enter_your_password">Enter your password</string>
+
+    <string name="txt_buy_now">Buy Now</string>
+
+
+</resources>

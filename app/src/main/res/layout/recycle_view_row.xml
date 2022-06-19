@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:text="Product Title"
+                style="@style/tv_title"/>
+
+            <FrameLayout
+                android:id="@+id/layout_frame"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/tv_title"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="10dp">
+
+                <ImageView
+                    android:id="@+id/iv_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/ic_launcher"
+                     />
+
+                <TextView
+                    android:id="@+id/tv_best_seller"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/txt_best_seller"
+                    android:layout_gravity="top|start"
+                    android:background="@drawable/best_seller_backghround"
+                    android:padding="10dp"
+                    android:textColor="@color/white"/>
+            </FrameLayout>
+
+            <RatingBar
+                android:id="@+id/rb_star"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/layout_frame"
+                app:layout_constraintStart_toStartOf="parent"
+                android:isIndicator="true"
+                style="?android:attr/ratingBarStyleSmall"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:id="@+id/tv_rating_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/layout_frame"
+                app:layout_constraintStart_toEndOf="@id/rb_star"
+                style="@style/tv_title"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"/>
+
+
+            <TextView
+                android:id="@+id/tv_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/tv_rating_value"
+                app:layout_constraintStart_toStartOf="parent"
+                android:text="Product Description"
+                android:fontFamily="@font/farmhouse_sans"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:id="@+id/tv_title_category"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/tv_description"
+                app:layout_constraintStart_toStartOf="parent"
+                android:text="@string/txt_category"
+                android:fontFamily="@font/farmhouse_sans"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:id="@+id/tv_category"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/tv_description"
+                app:layout_constraintStart_toEndOf="@id/tv_title_category"
+                android:text="Category"
+                android:fontFamily="@font/farmhouse_sans"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"/>
+
+            <TextView
+                android:id="@+id/tv_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/tv_category"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:text="Price"
+                android:textColor="@color/blue_price"
+                style="@style/tv_title"/>
+
+            <TextView
+                android:id="@+id/tv_title_sold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/tv_price"
+                app:layout_constraintEnd_toStartOf="@id/tv_sold"
+                android:text="@string/txt_sold"
+                android:textColor="@color/gray"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"/>
+
+
+            <TextView
+                android:id="@+id/tv_sold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/tv_price"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:text="200"
+                android:textColor="@color/gray"
+                android:layout_marginTop="5dp" />
+
+            <TextView
+                android:id="@+id/tv_free_delivery"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/tv_price"
+                app:layout_constraintStart_toStartOf="parent"
+                android:text="@string/txt_free_delivery"
+                android:visibility="invisible"
+                style="@style/tv_title"
+                android:background="@drawable/free_delivery_background"
+                android:padding="10dp"
+                android:textSize="15dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                app:layout_constraintTop_toBottomOf="@+id/tv_free_delivery"
+                android:background="@color/teal_700"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
+
